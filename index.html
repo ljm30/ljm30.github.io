@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jianming Long (龙键铭) — undergraduate at Tsinghua University researching the trustworthiness, memory, and agent systems of large language models.">
+    <meta name="author" content="Jianming Long">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Jianming Long (龙键铭)">
+    <meta property="og:description" content="Undergraduate at Tsinghua University researching the trustworthiness, memory, and agent systems of large language models.">
+    <meta property="og:url" content="https://ljm30.github.io/">
+    <title>Jianming Long (龙键铭) | Academic Homepage</title>
+    <!-- 字体走系统衬线栈（style.css :root），不依赖 Google Fonts CDN — 国内加载稳定。 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="#headline" class="skip-link">Skip to main content</a>
+    <div class="broadsheet">
+
+        <!-- Masthead -->
+        <header class="masthead">
+            <nav class="section-nav">
+                <a href="#headline">About</a>
+                <span class="nav-dot">·</span>
+                <a href="#publications">Publications</a>
+                <span class="nav-dot">·</span>
+                <a href="#news">News</a>
+                <span class="nav-dot">·</span>
+                <a href="#education">Education</a>
+                <span class="nav-dot">·</span>
+                <a href="#honors">Honors</a>
+                <span class="nav-dot">·</span>
+                <a href="#contact">Contact</a>
+                <button type="button" id="themeToggle" class="edition-btn section-toggle" aria-label="Toggle theme">◐</button>
+            </nav>
+            <div class="masthead-rule"></div>
+            <h1 class="masthead-title" data-config="name">Jianming Long</h1>
+            <p class="masthead-meta">龙键铭 &nbsp;·&nbsp; Last updated <span data-config="updated">June 2026</span></p>
+            <div class="masthead-rule"></div>
+        </header>
+
+        <section id="headline" class="paper-section">
+            <div class="front-columns">
+                <div class="col col-photo">
+                    <div class="hero-photo">
+                        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
+                        </svg>
+                    </div>
+                    <div class="photo-info">
+                        <p class="photo-name" data-config="name">Jianming Long</p>
+                        <p class="photo-role" data-config="role">Undergraduate Researcher</p>
+                        <p class="photo-place" data-config="university">Tsinghua University</p>
+                        <div class="photo-contact">
+                            <p><a href="mailto:longjm23@mails.tsinghua.edu.cn">Email</a></p>
+                            <p><a href="https://scholar.google.com/citations?user=fb_8qCEAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a> · <a href="https://github.com/ljm30" target="_blank" rel="noopener">GitHub</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-main">
+                    <p class="lead-para" data-config="bio">I am an undergraduate at Tsinghua University researching the trustworthiness, memory, and agent systems of large language models.</p>
+                    <p>My work centers on rigorously evaluating and improving what LLM-based systems know, remember, and do. Recent papers appear at <em>ICML 2026</em> (Spotlight) and <em>SIGIR 2026</em>.</p>
+                </div>
+                <div class="col col-side">
+                    <!-- 原 HIGHLIGHTS 统计已替换为 RESEARCH 研究方向（避免本科阶段虚高数字；想恢复统计见 git 历史） -->
+                    <div class="sidebar-box">
+                        <h4 class="sidebar-title">RESEARCH</h4>
+                        <ul class="sidebar-areas" id="cfg-focus"></ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-rule"></div>
+
+        <!-- Publications as News Articles -->
+        <section id="publications" class="paper-section">
+            <h3 class="section-banner">PUBLICATIONS</h3>
+            <div class="articles-columns" id="cfg-publications"></div>
+        </section>
+
+        <div class="section-rule"></div>
+
+        <!-- Projects as Classified Ads — 暂时注释（目前没有要展示的项目）。以后在 config.projects 加内容并取消本段注释即可。
+        <section id="projects" class="paper-section">
+            <h3 class="section-banner">PROJECTS &amp; OPEN SOURCE</h3>
+            <div class="classifieds" id="cfg-projects"></div>
+        </section>
+        <div class="section-rule"></div>
+        -->
+
+        <!-- News as Bulletin Board -->
+        <section id="news" class="paper-section">
+            <h3 class="section-banner">NEWS</h3>
+            <div class="bulletin-columns" id="cfg-news"></div>
+        </section>
+
+        <div class="section-rule"></div>
+
+        <!-- Education (原 Career；实习/工作经历以后可在 config.experience 里加) -->
+        <section id="education" class="paper-section">
+            <h3 class="section-banner">EDUCATION</h3>
+            <div class="career-columns" id="cfg-experience"></div>
+        </section>
+
+        <div class="section-rule"></div>
+
+        <!-- Honors & Awards (新增) -->
+        <section id="honors" class="paper-section">
+            <h3 class="section-banner">HONORS &amp; AWARDS</h3>
+            <div class="career-columns" id="cfg-honors"></div>
+        </section>
+
+        <div class="section-rule"></div>
+
+        <!-- Contact as Letters to Editor -->
+        <section id="contact" class="paper-section">
+            <h3 class="section-banner">CONTACT</h3>
+            <div class="letters-box">
+                <p class="letters-text">I'm always happy to chat about research — feel free to reach out.</p>
+                <p class="letters-email"><a href="mailto:longjm23@mails.tsinghua.edu.cn">longjm23@mails.tsinghua.edu.cn</a></p>
+                <p class="letters-addr">THUIR · Tsinghua University · Beijing, China</p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="paper-footer">
+            <div class="footer-rule"></div>
+            <p>&copy; 2026 Jianming Long (龙键铭)</p>
+        </footer>
+
+    </div>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
