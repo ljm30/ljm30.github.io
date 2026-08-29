@@ -12,7 +12,7 @@ const USER_CONFIG = {
   email:      "longjm23@mails.tsinghua.edu.cn",
   bio:        "I am an undergraduate at Tsinghua University (Zhili College), majoring in Information and Computing Science. I do research at THUIR on the trustworthiness, memory, and agent systems of large language models.",
   photo:      "images/profile.jpg",     // 复用仓库里已有的证件照
-  updated:    "June 2026",              // 报头副标题显示的"最后更新"时间；改完内容顺手更新一下
+  updated:    "August 2026",            // 报头副标题显示的"最后更新"时间；改完内容顺手更新一下
 
   // 学术/社交链接（渲染在照片栏下方）
   links: {
@@ -33,6 +33,22 @@ const USER_CONFIG = {
   publications: [
     {
       year:    2026,
+      title:   "Retrievable Gradients: Continual Post-Training Without Cumulative Weight Drift",
+      authors: "Weihang Su, Jiacheng Kang, Jingyan Xu, Qingyao Ai, Jianming Long, Hanwen Zhang, Bangde Du, Xinyuan Cao, Min Zhang, Yiqun Liu",
+      venue:   "EMNLP 2026 · Main Conference",
+      abstract:"ReGrad treats document-specific gradients as retrievable knowledge units: a bi-level meta-learning objective turns them into generalizable adaptation signals, which are stored in a Gradient Bank and temporarily applied when relevant at inference time — enabling scalable parametric knowledge injection without cumulative weight drift.",
+      links:   { arxiv: "https://arxiv.org/abs/2606.15734", code: "https://github.com/oneal2000/ReGrad" },
+    },
+    {
+      year:    2026,
+      title:   "SRA-Bench: Benchmarking Skill Retrieval Augmentation for Agentic AI",
+      authors: "Weihang Su, Jianming Long, Qingyao Ai, Qiaozhi He, Yichen Tang, Changyue Wang, Yiteng Tu, Yingbo Wang, Yiqun Liu",
+      venue:   "EMNLP 2026 · Findings",
+      abstract:"Introduces Skill Retrieval Augmentation (SRA), a paradigm in which agents dynamically retrieve and apply reusable skills, and SRA-Bench for evaluating skill retrieval, incorporation, and end-task execution at scale.",
+      links:   { arxiv: "https://arxiv.org/abs/2604.24594", code: "https://github.com/oneal2000/SR-Agents", project: "https://sr-agents.github.io", data: "https://huggingface.co/datasets/WeihangSu/SRA-Bench" },
+    },
+    {
+      year:    2026,
       title:   "MemoryBench: A Benchmark for Memory and Continual Learning in LLM Systems",
       authors: "Qingyao Ai, Yichen Tang, Changyue Wang, Jianming Long, Weihang Su, Yiqun Liu",
       venue:   "ICML 2026 · Spotlight (top 2.2%)",
@@ -48,14 +64,6 @@ const USER_CONFIG = {
       links:   { arxiv: "https://arxiv.org/abs/2508.15658", code: "https://github.com/oneal2000/SurGE", data: "https://drive.google.com/drive/folders/1ZZPeZvjexFcCmgFqxftKeCPn1vYeBR0Q?usp=drive_link" },
     },
     {
-      year:    2026,
-      title:   "Skill Retrieval Augmentation for Agentic AI",
-      authors: "Weihang Su, Jianming Long, Qingyao Ai, Yichen Tang, Changyue Wang, Yiteng Tu, Yiqun Liu",
-      venue:   "Preprint · arXiv:2604.24594",
-      abstract:"Introduces the Skill Retrieval Augmentation (SRA) paradigm and the SR-Agents framework, letting agents dynamically retrieve and apply skills from a large corpus; ships SRA-Bench across six domains.",
-      links:   { arxiv: "https://arxiv.org/abs/2604.24594", code: "https://github.com/oneal2000/SR-Agents", project: "https://sr-agents.github.io", data: "https://huggingface.co/datasets/WeihangSu/SRA-Bench" },
-    },
-    {
       year:    2025,
       title:   "Towards Unification of Hallucination Detection and Fact Verification for Large Language Models",
       authors: "Weihang Su, Jianming Long, Changyue Wang, Shiyu Lin, Jingyan Xu, Ziyi Ye, Qingyao Ai, Yiqun Liu",
@@ -66,9 +74,10 @@ const USER_CONFIG = {
   ],
 
   news: [
+    { date: "2026.08", badge: "Accepted",  text: "Retrievable Gradients was accepted to EMNLP 2026 (Main Conference)." },
+    { date: "2026.08", badge: "Accepted",  text: "SRA-Bench was accepted to EMNLP 2026 (Findings)." },
     { date: "2026.05", badge: "Spotlight", text: "MemoryBench was accepted to ICML 2026 as a Spotlight (top 2.2% of submissions)." },
     { date: "2026.04", badge: "Accepted",  text: "SurGE was accepted to SIGIR 2026 (Resource Track)." },
-    { date: "2026.04", badge: "Preprint",  text: "Released Skill Retrieval Augmentation for Agentic AI." },
     { date: "2025.12", badge: "Preprint",  text: "Released Towards Unification of Hallucination Detection and Fact Verification for LLMs." },
   ],
 
