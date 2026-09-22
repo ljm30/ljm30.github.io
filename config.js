@@ -12,7 +12,7 @@ const USER_CONFIG = {
   email:      "longjm23@mails.tsinghua.edu.cn",
   bio:        "I am an undergraduate at Tsinghua University (Zhili College), majoring in Information and Computing Science. I do research at THUIR on the trustworthiness, memory, and agent systems of large language models.",
   photo:      "images/profile.jpg",     // 复用仓库里已有的证件照
-  updated:    "August 2026",            // 报头副标题显示的"最后更新"时间；改完内容顺手更新一下
+  updated:    "September 2026",         // 报头副标题显示的"最后更新"时间；改完内容顺手更新一下
 
   // 学术/社交链接（渲染在照片栏下方）
   links: {
@@ -41,10 +41,10 @@ const USER_CONFIG = {
     },
     {
       year:    2026,
-      title:   "SRA-Bench: Benchmarking Skill Retrieval Augmentation for Agentic AI",
+      title:   "Skill Retrieval Augmentation for Agentic AI",
       authors: "Weihang Su, Jianming Long, Qingyao Ai, Qiaozhi He, Yichen Tang, Changyue Wang, Yiteng Tu, Yingbo Wang, Yiqun Liu",
       venue:   "EMNLP 2026 · Findings",
-      abstract:"Introduces Skill Retrieval Augmentation (SRA), a paradigm in which agents dynamically retrieve and apply reusable skills, and SRA-Bench for evaluating skill retrieval, incorporation, and end-task execution at scale.",
+      abstract:"Formulates Skill Retrieval Augmentation (SRA), a capability-centric counterpart to RAG, and introduces SRA-Bench with 5,400 test instances, 636 gold skills, and a corpus of 26,262 skills for evaluating skill retrieval, incorporation, and application.",
       links:   { arxiv: "https://arxiv.org/abs/2604.24594", code: "https://github.com/oneal2000/SR-Agents", project: "https://sr-agents.github.io", data: "https://huggingface.co/datasets/WeihangSu/SRA-Bench" },
     },
     {
@@ -52,7 +52,7 @@ const USER_CONFIG = {
       title:   "MemoryBench: A Benchmark for Memory and Continual Learning in LLM Systems",
       authors: "Qingyao Ai, Yichen Tang, Changyue Wang, Jianming Long, Weihang Su, Yiqun Liu",
       venue:   "ICML 2026 · Spotlight (top 2.2%)",
-      abstract:"The first benchmark for memory and feedback-driven continual learning in LLM systems — 11 datasets, ~20k cases. Finds that state-of-the-art memory systems still fail to reliably beat a simple RAG baseline.",
+      abstract:"An extensible benchmark for feedback-driven memory and continual learning in LLM systems, spanning 28 datasets across three domains and four task shapes; results show that current systems remain far from effective and efficient continual learning.",
       links:   { arxiv: "https://arxiv.org/abs/2510.17281", code: "https://github.com/THUIR/MemoryBench", project: "https://memorybench.thuir.cn/", data: "https://huggingface.co/datasets/THUIR/MemoryBench" },
     },
     {
@@ -75,7 +75,7 @@ const USER_CONFIG = {
 
   news: [
     { date: "2026.08", badge: "Accepted",  text: "Retrievable Gradients was accepted to EMNLP 2026 (Main Conference)." },
-    { date: "2026.08", badge: "Accepted",  text: "SRA-Bench was accepted to EMNLP 2026 (Findings)." },
+    { date: "2026.08", badge: "Accepted",  text: "Skill Retrieval Augmentation for Agentic AI was accepted to EMNLP 2026 (Findings)." },
     { date: "2026.05", badge: "Spotlight", text: "MemoryBench was accepted to ICML 2026 as a Spotlight (top 2.2% of submissions)." },
     { date: "2026.04", badge: "Accepted",  text: "SurGE was accepted to SIGIR 2026 (Resource Track)." },
     { date: "2025.12", badge: "Preprint",  text: "Released Towards Unification of Hallucination Detection and Fact Verification for LLMs." },
